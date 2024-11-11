@@ -1,0 +1,79 @@
+.dropdown_g{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dropdown{
+    width: 15em;
+    position: relative;
+    margin: 2em;
+}
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black; 
+    border-radius: 0.25em; 
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+}
+
+.hr {
+    border-top: 1px solid black;
+}
+
+
+.products-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 300px; /* Set a fixed width */
+    height: 400px; /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    /* border: 1px solid black; */
+    border-radius: 0.5em;
+    margin: 20px;
+    padding: 10px;
+    background-color: #eee;
+    text-align: center;
+    box-sizing: border-box; 
+}
+img{
+    border-radius: 0.5em;
+}
+
+.box img {
+    height: 225px; 
+    width: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.box .info .title {
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.box .info .subinfo .price {
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+

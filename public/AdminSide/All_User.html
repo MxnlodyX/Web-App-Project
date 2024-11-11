@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../AdminSide/CSS/sidebar.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+  
+   
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav class="container-sidebar">
+        <div class="sidebar">
+            <div class="title">
+                
+                 <p>PUMA DASHBOARD</p>
+            </div>
+            <hr>
+            <div class="title-page">
+                <p>Component</p>
+            </div>
+            <div class="mega-list">
+                <div class="list-component">
+                    <i class="icon ph-bold ph-user"></i>
+                    <p>Account Management</p>
+                </div>
+                <div class="sub-list-component">
+                    <a href="../AdminSide/All_Admin.html">All Admin</a>
+                    <a href="../AdminSide/All_User.html">All User</a>
+                </div>
+            </div>
+            <div class="mega-list">
+                <div class="list-component">
+                    <i class="icon ph-bold ph-chart-bar"></i>
+
+                    <p>Product Management</p>
+                </div>
+                <div class="sub-list-component">
+                    <a href="../AdminSide/All_Product.html">All Product</a>
+                    <a href="">Add Product</a>
+                </div>
+            </div>
+            <div class="exit">
+                <i class="icon ph-bold ph-sign-out"></i>
+                <a href="">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <section class="container">
+        <div class="title-main">
+        </div>
+        <div class="content-container">
+            <div class="header-content">
+                <div class="title">
+                    User Management
+                </div>
+                <div class="add-button">
+                    <a href=""><button>+ ADD</button></a>
+                </div>
+            </div>
+                <table id="myTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>UserID</th>
+                            <th>FirstName</th>
+                            <th>ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>UID666</td>
+                            <td>Somsri</td>
+                            <td class="action">
+                                <button type="menu" class="edit">EDIT</button>
+                                <button type="submit" class="delete">DELETE</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>UIID777</td>
+                            <td>Somchai</td>
+                            <td class="action">
+                                <button type="menu" class="edit">EDIT</button>
+                                <button type="submit" class="delete">DELETE</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </section>
+
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.projectmember{
+    text-align: center;
+    font-size: 50px;
+    margin: 50px;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.member{
+    column-count: 4;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: auto;
+}
+.personal{
+    text-align: center;
+    /* border-radius: 5px;
+    border: 5px;
+    border-color: black;
+    border: solid; */
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: monospace;
+}
+.imgpersonal{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    object-position: top;
+}
+.imgpersonal-man{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 20px;
+}
