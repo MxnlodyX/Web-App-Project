@@ -91,76 +91,79 @@
         </ul>
 
     </nav>
-
     <section class="Banner_Page">
         <h1>Advance Search</h1>
     </section>
+
+    
     <div class="resultpic">
         <div class="filter">
             <form action="">
-                <div class="filterBOX">
-                    <div class="ProductName_HEAD">
-                        <h1>Product Name</h1>
-                        <input type="text" name="Product_Name">
-                    </div>
-                </div>
-
-                <div class="filterBOX">
-                    <div class="ProductType_HEAD">
-                        <h1>Product type</h1>
-                        <div class="filter-option"><input type="checkbox" name="GENG" value="shoes"/>Shoes</div>
-                        <div class="filter-option"><input type="checkbox" name="GENG" value="clothing"/>Clothing</div>
-                        <div class="filter-option"><input type="checkbox" name="GENG" value="accessories"/>Accessories</div>
-                    </div>
-                </div>
-
-                <div class="filterBOX">
-                    <div class="Gender_HEAD">
-                    <h1>Gender</h1>
-                        <div class="filter-option"><input type="radio" name="GENG" value="male"/>Male</div>
-                        <div class="filter-option"><input type="radio" name="GENG" value="female"/>Female</div>
-                        <div class="filter-option"><input type="radio" name="GENG" value="unisex"/>Unisex</div>
-                    </div>
-                </div>
-                
-                <div class="filterBOX">
-                    <div class="Sport_HEAD">
-                        <h1>Sport</h1>
-                        <div class="filter-option"><input type="checkbox" name="Sport" value="football">Football</div>
-                        <div class="filter-option"><input type="checkbox" name="Sport" value="basketball">Basketball</div>
-                        <div class="filter-option"><input type="checkbox" name="Sport" value="running">Running</div>
-                        <div class="filter-option"><input type="checkbox" name="Sport" value="training">Training</div>
-                        <div class="filter-option"><input type="checkbox" name="Sport" value="outdoor">outdoor</div>
-                    </div>
-                </div>
-
-                <div class="filterBOX">
-                    <div class="Collection_HEAD">
-                        <h1>Collection</h1>
-                        <div class="filter-option"><input type="checkbox" name="Collection" value="AF1">AF#1</div>
-                        <div class="filter-option"><input type="checkbox" name="Collection" value="AF2">AF#2</div>
-                        <div class="filter-option"><input type="checkbox" name="Collection" value="AF3">AF#3</div>
-                        <div class="filter-option"><input type="checkbox" name="Collection" value="AF4">AF#4</div>
-                        <div class="filter-option"><input type="checkbox" name="Collection" value="AF5">AF#5</div>
-                    </div>
-                </div>
-
-                <div class="filterBOX">
-                    <div class="ValueBar_HEAD">
-                        <div class="filter-group">
-                            <h1>Value</h1>
-                            <div class="filter-inputs">
-                                <label>Min</label>
-                                <input type="number" placeholder="0" />
-                                <span>-</span>
-                                <label>Max</label>
-                                <input type="number" placeholder="99999" />
-                            </div>
+                <fieldset>
+                    <div class="filterBOX">
+                        <div class="ProductName_HEAD">
+                            <h1>Product Name</h1>
+                            <input type="text" name="Product_Name">
                         </div>
-        
                     </div>
-                </div>
-                <button type="submit" class="Asearch">Search</button>
+
+                    <div class="filterBOX">
+                        <div class="ProductType_HEAD">
+                            <h1>Product type</h1>
+                            <div class="filter-option"><input type="checkbox" name="GENG" value="shoes"/>Shoes</div>
+                            <div class="filter-option"><input type="checkbox" name="GENG" value="clothing"/>Clothing</div>
+                            <div class="filter-option"><input type="checkbox" name="GENG" value="accessories"/>Accessories</div>
+                        </div>
+                    </div>
+
+                    <div class="filterBOX">
+                        <div class="Gender_HEAD">
+                        <h1>Gender</h1>
+                            <div class="filter-option"><input type="radio" name="GENG" value="male"/>Male</div>
+                            <div class="filter-option"><input type="radio" name="GENG" value="female"/>Female</div>
+                            <div class="filter-option"><input type="radio" name="GENG" value="unisex"/>Unisex</div>
+                        </div>
+                    </div>
+                    
+                    <div class="filterBOX">
+                        <div class="Sport_HEAD">
+                            <h1>Sport</h1>
+                            <div class="filter-option"><input type="checkbox" name="Sport" value="football">Football</div>
+                            <div class="filter-option"><input type="checkbox" name="Sport" value="basketball">Basketball</div>
+                            <div class="filter-option"><input type="checkbox" name="Sport" value="running">Running</div>
+                            <div class="filter-option"><input type="checkbox" name="Sport" value="training">Training</div>
+                            <div class="filter-option"><input type="checkbox" name="Sport" value="outdoor">outdoor</div>
+                        </div>
+                    </div>
+
+                    <div class="filterBOX">
+                        <div class="Collection_HEAD">
+                            <h1>Collection</h1>
+                            <div class="filter-option"><input type="checkbox" name="Collection" value="AF1">AF#1</div>
+                            <div class="filter-option"><input type="checkbox" name="Collection" value="AF2">AF#2</div>
+                            <div class="filter-option"><input type="checkbox" name="Collection" value="AF3">AF#3</div>
+                            <div class="filter-option"><input type="checkbox" name="Collection" value="AF4">AF#4</div>
+                            <div class="filter-option"><input type="checkbox" name="Collection" value="AF5">AF#5</div>
+                        </div>
+                    </div>
+
+                    <div class="filterBOX">
+                        <div class="ValueBar_HEAD">
+                            <div class="filter-group">
+                                <h1>Value</h1>
+                                <div class="filter-inputs">
+                                    <label>Min</label>
+                                    <input type="text" placeholder="0" />
+                                    <span>-</span>
+                                    <label>Max</label>
+                                    <input type="text" placeholder="99999" />
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <button type="submit" class="Asearch">Search</button>
+                </fieldset>
             </form>
         </div>
         
@@ -244,7 +247,6 @@
             </div>
         </section>
     </div>
-
 
 
 

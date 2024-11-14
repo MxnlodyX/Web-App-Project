@@ -10,15 +10,18 @@
     align-items: center;
     font-size: 1.2em;
     color: #333;
+    margin-top: 5px;
     
 }
 .filter-option input {
-    margin-right: 8px; /* Increase this value for more spacing */
-    transform: scale(1.2); /* Keeps the larger size */
-    accent-color: #007bff; /* Customize radio button color */
+    margin-right: 8px; 
+    transform: scale(1.2); 
+    accent-color: #007bff;
+    margin-bottom: 2px; 
 }
 form{
     padding: 150px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .ProductName_HEAD, .ProductType_HEAD ,.Gender_HEAD, .Sport_HEAD, .Collection_HEAD,.ValueBar_HEAD{
@@ -32,12 +35,6 @@ input{
 .field{
     display: flex;
     width: 100%;
-}
-
-.rangeinput{
-    width: 100%;
-    display: flex;
-    align-items: center;
 }
 
 .field input{
@@ -61,21 +58,31 @@ input{
 
 .filter-inputs {
     display: flex;
-    gap: 15px; /* Increase the space between each item in the filter-inputs */
+    gap: 15px; 
     align-items: center;
-    margin-top: 10px; /* Space above the input group */
     margin-left: 20px;
+
+}
+
+.filter-inputs input{
+    border-radius: 10px;
+    border: 1px solid;
+    height: 37px;
+    text-align: center;
 }
 
 .filter-inputs label {
     font-size: 1.2em;
     color: #333;
-    margin-right: 3px; /* Space between label and input */
+    margin-right: 3px;
+    margin-top: 5px; 
 }
+
 
 .ProductName_HEAD input{
     border-radius: 10px;
     border: 1px solid;
+    width: 395px;
 }
 
 .filterBOX{
@@ -86,13 +93,22 @@ form button{
     background-color: rebeccapurple;
     color: white;
     padding: 10px;
-    border-radius: 10px;
-    position: relative;
-    top: 20px;
+    border-radius: 10px ;
+    display: block;
+    margin: auto;
 }
+
 form button:hover {
     background-color: #101038e8;
 }
+fieldset{
+    background-color: #eee;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    height: 490px;
+}
+
+
 
 
 
@@ -104,8 +120,8 @@ form button:hover {
 }
 
 .box {
-    width: 300px; /* Set a fixed width */
-    height: 400px; /* Set a fixed height */
+    width: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,6 +160,3 @@ img{
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
