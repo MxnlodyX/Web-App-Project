@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../AdminSide/CSS/sidebar_els.css">
+    <link rel="stylesheet" href="/public/AdminSide/Action_page/CSS/Add-product.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../../AdminSide/CSS/container.css">
+
+    <title>Add Product</title>
+</head>
+<body>
+    <nav class="container-sidebar">
+        <div class="sidebar">
+            <div class="title">
+                 <p>PUMA DASHBOARD</p>
+            </div>
+            <hr>
+            <div class="title-page">
+                <p>Component</p>
+            </div>
+            <div class="mega-list">
+                <div class="list-component">
+                    <i class="icon ph-bold ph-user"></i>
+                    <p>Account Management</p>
+                </div>
+                <div class="sub-list-component">
+                    <a href="../All_Admin.html">All Admin</a>
+                    <a href="../All_User.html">All User</a>
+                </div>
+            </div>
+            <div class="mega-list">
+                <div class="list-component">
+                    <i class="icon ph-bold ph-chart-bar"></i>
+
+                    <p>Product Management</p>
+                </div>
+                <div class="sub-list-component">
+                    <a href="../All_Product.html">All Product</a>
+                </div>
+            </div>`
+            <div class="exit">
+                <i class="icon ph-bold ph-sign-out"></i>
+                <a href="">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <section class="container">
+        <div class="title-main">
+        </div>
+        <div class="content-container">
+            <div class="header-content">
+                <div class="title">
+                    Add Product Element
+                </div>
+                <div class="back-button">
+                    <a href="../All_Product.html"><button>Back</button></a>
+                </div>
+            </div>
+                <form>
+                    <div class="form-group">
+                        <label for="productname">Product Name</label>
+                        <input type="text" id="productname" placeholder="Enter ProductName">
+                        <label for="producttype">Product Type</label>
+                        <select class="collection">
+                            <option value="option1"> 1</option>
+                            <option value="option2"> 2</option>
+                            <option value="option3"> 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="productprice">Product Price</label>
+                        <input type="text" id="productprice" placeholder="Enter ProductPrice">
+                        <label for="Collection">Collection</label>
+                        <select class="collection">
+                            <option value="option1"> 1</option>
+                            <option value="option2"> 2</option>
+                            <option value="option3"> 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="gender-options">
+                            <label><input type="radio" name="gender" value="male"> Male</label>
+                            <label><input type="radio" name="gender" value="female"> Female</label>
+                            <label><input type="radio" name="gender" value="female"> All</label>
+                        </div>
+                        <label for="productdescrition">Product Description</label>
+                        <input type="text" id="productdescrition" placeholder="Enter ProductDescrition">
+                    </div>
+                    <div class="form-group">
+                     <div class="profile-picture">
+                        <img src="https://via.placeholder.com/100" id="preview" src="" alt="Image Preview">
+                        <button type="button"><input type="file" id="imageUpload" accept="image/*"></button>
+                    </div>
+                </div>
+                </form>
+                <div class="btn-action-group">
+                    <button type="submit" class="Create_btn">CREATE PRODUCT</button>
+                </div>
+    </section>
+
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+   <!-- JavaScript for Image Preview -->
+   <script>
+    const imageUpload = document.getElementById('imageUpload');
+    const preview = document.getElementById('preview');
+
+    imageUpload.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                preview.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+</body>
+</html>
