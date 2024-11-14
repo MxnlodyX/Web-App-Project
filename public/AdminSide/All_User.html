@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../AdminSide/CSS/sidebar.css">
+    <link rel="stylesheet" href="../AdminSide/CSS/sidebar_els.css">
+    <link rel="stylesheet" href="../AdminSide/CSS/container.css">
+    <link rel="stylesheet" href="../AdminSide/CSS/table.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-  
-   
-    
+
     <title>Document</title>
 </head>
 <body>
@@ -39,7 +39,6 @@
                 </div>
                 <div class="sub-list-component">
                     <a href="../AdminSide/All_Product.html">All Product</a>
-                    <a href="">Add Product</a>
                 </div>
             </div>
             <div class="exit">
@@ -57,7 +56,7 @@
                     User Management
                 </div>
                 <div class="add-button">
-                    <a href=""><button>+ ADD</button></a>
+                    <a href="../AdminSide/Action_page/add-user-account.html"><button>+ ADD</button></a>
                 </div>
             </div>
                 <table id="myTable" class="display">
@@ -73,15 +72,7 @@
                             <td>UID666</td>
                             <td>Somsri</td>
                             <td class="action">
-                                <button type="menu" class="edit">EDIT</button>
-                                <button type="submit" class="delete">DELETE</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>UIID777</td>
-                            <td>Somchai</td>
-                            <td class="action">
-                                <button type="menu" class="edit">EDIT</button>
+                                <a type="menu" class="edit">EDIT</a>
                                 <button type="submit" class="delete">DELETE</button>
                             </td>
                         </tr>

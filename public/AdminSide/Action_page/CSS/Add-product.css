@@ -1,0 +1,103 @@
+.back-button button{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ee4040;
+    color: white;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-group label {
+    width: 120px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 10px;
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.button-group .submit-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.button-group .cancel-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+.btn-action-group{
+    display: flex;
+    flex-direction: row;
+
+}
+.btn-action-group button{
+    color: white;
+    font-weight: bold;
+    padding: 13px;
+    border: none;
+    border-radius: 10%;
+}
+.btn-action-group .Create_btn{
+    background: rgb(170, 219, 124);
+}
+
+.profile-picture{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 5%;
+}
+.profile-picture img{
+    width: 200px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.profile-picture button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+select.collection {
+    width: 30%;
+    padding: 10px;
+    border:1px solid rgb(199, 198, 198);
+    border-radius: 5px;
+}

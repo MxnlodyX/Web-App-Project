@@ -1,0 +1,38 @@
+section.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #f4f4f9;
+}
+.title-main{
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+.content-container {
+    width: 100% ; 
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.content-container .title{
+    color: black;
+    font-size: 25px;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-content .add-button button{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #4cc740;
+    color: white;
+    font-weight: bold;
+}
